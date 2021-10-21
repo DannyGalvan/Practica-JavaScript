@@ -13,7 +13,7 @@ body
 {
     background-color: rgba(0,0,0,0.5);
     width: 75%;
-    height: 20 vh;
+    height: auto;
     border: 2px solid white;
     display: flex;
     justify-content: center;
@@ -46,7 +46,7 @@ body
 {
     background-color: rgba(0,0,0,0.2);
     width: 75%;
-    height: 60vh;
+    height: auto;
     border: 2px solid white;
     display: none;
     justify-content: center;
@@ -58,11 +58,11 @@ body
 }
 .i
 {
-    height: 60vh;
+    height: auto;
 }
 .p
 {
-    height: 40vh;
+    height: auto;
 }
 .section div
 {
@@ -72,7 +72,7 @@ body
 .section button
 {
     width: 30%;
-    height: 50px;
+    height: auto;
     background-color: black;
     color: white;
     border-radius: 15px;
