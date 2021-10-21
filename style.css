@@ -1,0 +1,131 @@
+body
+{
+    background-color:#121f3d;
+    color:white;
+}
+.main
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sectionbuton
+{
+    background-color: rgba(0,0,0,0.5);
+    width: 75%;
+    height: 20 vh;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+.sectionbuton button
+{
+    width: 45%;
+    height: 35px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.sectionbuton button:hover
+{
+    width: 45%;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 750ms;
+}
+.section  
+{
+    background-color: rgba(0,0,0,0.2);
+    width: 75%;
+    height: 60vh;
+    border: 2px solid white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+}
+.i
+{
+    height: 60vh;
+}
+.p
+{
+    height: 40vh;
+}
+.section div
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.section button
+{
+    width: 30%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.section button:hover
+{
+    background-color: white;
+    color: black;
+    transition: 750ms;
+}
+.section input
+{
+    border-radius: 20px;
+    width: 80%;
+    text-align: center;
+}
+.section h2
+{
+    text-align: center;
+    width: 100%;
+}
+.section p
+{
+    width: 100%;
+}
+.div4
+{
+    text-align: center;
+}
+.error
+{
+    color: red;
+    margin: 0px;
+}
+#promedioSec
+{
+    height: auto;
+}
+#tabla
+{
+    border: 2px solid white;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+th
+{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+td
+{
+    text-align: center;
+    border: 1px solid white;
+}

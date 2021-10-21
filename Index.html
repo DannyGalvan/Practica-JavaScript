@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://www.etapainfantil.com/wp-content/uploads/2021/05/Figuras-geometricas.jpg" type="image/x-icon">
+    <title>Bot Matematico</title>
+</head>
+<body>
+    <header>
+        <h1>Bot Matematico que te salvara la vida</h1>
+        <p>Estos son los talleres aprendidos del Curso de JavaScript de Platzi</p>
+    </header>
+    <main class="main">
+        <section class="sectionbuton">
+            <div class="div4">
+                <h1>Calculadora Geometrica</h1>
+            <form action="">    
+                <button type="button" id="ocultarTodo" onclick="mostrar(ocultarTodo)">Ocultar todo</button>
+                <button type="button" id="cuadrado" onclick="mostrar(cuadradosec)">Cuadrado</button>
+                <button type="button" id="triangulo" onclick="mostrar(triangulosec)">Triangulo</button>
+                <button type="button" id="circulo" onclick="mostrar(circulosec)">circulo</button>
+                <button type="button" id="isosceles" onclick="mostrar(isoscelessec)">triangulo Isosceles</button>
+            </form> 
+            </div>
+        </section>
+        <section class="section p" id="cuadradosec">
+            <h2>Calcula el area y perimetro de un Cuadrado</h2>
+            <form action="">
+                <div class="div4">
+                    <label for="inputCuadrado">Escribe cuanto miden los lados de tu Cuadrado</label>
+                    <input id="inputCuadrado" type="number" placeholder="ingresa valor">
+                    <p id="errorCuadrado" class="error"></p>
+                </div>
+               <div class="div4">
+                    <p id="resultadoCuadrado"></p>
+                    <button type="button" onclick="calcularAreaCuadrado()">Area del cuadrado</button>
+                    <button type="button" onclick="calcularPerimetroCuadrado()">perimetro cuadrado</button> 
+               </div> 
+            </form>
+        </section>
+        <section class="section" id="triangulosec">
+            <h2>Calcula el area y perimetro de un Triangulo</h2>
+            <form action="">
+                <div class="div4">
+                    <label for="inputTriangulo1">Escribe cuanto mide el lado 1 de tu Triangulo</label>
+                    <input id="inputTriangulo1" type="number" placeholder="ingresa valor1">
+                    <p id="errorTriangulo1" class="error"></p>
+                </div>
+                <div class="div4">
+                    <label for="inputTriangulo2">Escribe cuanto mide el lado 2 de tu Triangulo</label>
+                    <input id="inputTriangulo2" type="number" placeholder="ingresa valor2">
+                    <p id="errorTriangulo2" class="error"></p>
+                </div>
+                <div class="div4">
+                    <label for="alturaTriangulo">Escribe cuanto tiene de altura tu Triangulo</label>
+                    <input id="alturaTriangulo" type="number" placeholder="ingresa la altura">
+                    <p id="errorTriangulo3" class="error"></p>
+                </div>
+                <div class="div4">
+                    <label for="baseTriangulo">Escribe cuanto mide la base de tu Triangulo</label>
+                    <input id="baseTriangulo" type="number" placeholder="ingresa la base">
+                    <p id="errorTriangulo4" class="error"></p>
+                </div>
+                <div class="div4">
+                    <p id="resultadoTriangulo"></p>
+                    <button type="button" onclick="calcularAreaTriangulo()">Area delTriangulo</button>
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Perimetro Triangulo</button>
+                </div>     
+            </form>
+        </section>
+        <section class="section p" id="circulosec">
+            <h2>Calcula el area y perimetro de un Circulo</h2>
+            <form action="">
+                <div class="div4">
+                    <label for="inputCirculo">Escribe cuanto mide el radio del Circulo</label>
+                    <input id="inputCirculo" type="number" placeholder="ingresa el radio del circulo">
+                    <p id="errorCirculo" class="error"></p>
+                </div>
+                <div class="div4">
+                    <p id="resultadoCirculo"></p>
+                    <button type="button" onclick="calcularAreaCirculo()">Area del Circulo</button>
+                    <button type="button" onclick="calcularPerimetroCirculo()">perimetro Circulo</button>  
+                </div> 
+            </form>
+        </section>
+        <section class="section I" id="isoscelessec">
+            <h2>Calcula el area y perimetro de un Triangulo Isosceles</h2>
+            <form action="">
+                <div class="div4">
+                    <label for="inputIsoscelesl">Escribe cuanto mide el  lado1 del Triangulo</label>
+                    <input id="inputIsoscelesl" type="number" placeholder="ingresa valor1">
+                    <p id="errorTrianguloIs1" class="error"></p>
+                </div>
+                <div class="div4">
+                    <label for="inputIsosceles2">Escribe cuanto mide el  lado2 del Triangulo</label>
+                    <input id="inputIsosceles2" type="number" placeholder="ingresa valor2">
+                    <p id="errorTrianguloIs2" class="error"></p>
+                </div>
+                <div class="div4">
+                    <label for="inputIsoscelesb">Escribe cuanto mide la base del Triangulo</label>
+                    <input id="inputIsoscelesb" type="number" placeholder="ingresa valor base">
+                    <p id="errorTrianguloIsb" class="error"></p>
+                </div>
+                <div class="div4">
+                    <p id="resultadoTrianguloIs"></p>
+                    <button type="button" onclick="calcularAreaTisosceles()">Area del Triangulo Isosceles</button>
+                    <button type="button" onclick="calcularPerimetroTisosceles()">perimetro Triangulo Isosceles</button>
+                    <button type="button" onclick="calcularAlturaTisosceles()">Altura Triangulo Isosceles</button>  
+                </div> 
+            </form>
+        </section>
+        <section class="sectionbuton">
+            <div class="div4">
+                <h1>Calculadora de Porcentajes y Descuentos</h1>
+            <form action="">    
+                <button type="button" id="ocultarTodoDescuento" onclick="mostrar(ocultarTodoDescuento)">Ocultar Todo</button>
+                <button type="button" id="Descuentos" onclick="mostrar(descuentoSec)">Calcular</button>
+            </form> 
+            </div>
+        </section>
+        <section class="section" id="descuentoSec">
+            <h2>Calcula el Descuento de Cualquier Producto</h2>
+            <form action="">
+                <div class="div4">
+                    <label for="inputPrecio" aria-multiline="true">Ingresa el Precio del Producto</label> <br>
+                    <span>Q</span><input id="inputPrecio" type="number" inputmode="numeric" placeholder="ingresa precio del Producto">
+                    <p id="errorPrecio" class="error"></p>
+                </div>
+                <div class="div4">
+                    <label for="inputDescuento" >Ingresa el Porcentaje de Descuento</label> <br> <span>%</span>
+                    <input id="inputDescuento" type="number" inputmode="numeric" placeholder="Ingresa el porcentade a descontar">
+                    <p id="errorDescuento" class="error"></p>
+                </div>
+                <div class="div4">
+                    <p id="resultadoDescuento"></p>
+                    <button type="button" onclick="calculardescuentos()">Calcular Descuento</button>
+                </div> 
+            </form>
+        </section>
+        <section class="sectionbuton">
+            <div class="div4">
+                <h1>Calculadora de Promedio Moda y Media</h1>
+            <form action="">    
+                <button type="button" id="ocultarTodoProm" onclick="mostrar(ocultarTodoProm)">Ocultar Todo</button>
+                <button type="button" id="Promedio" onclick="mostrar(promedioSec)">Calcular</button>
+            </form> 
+            </div>
+        </section>
+        <section class="section" id="promedioSec">
+            <h2>Calcula Promedio Mediana o Moda</h2>
+                <div class="div4">
+                    <label for="numeroDatos">cuantos datos deseas promediar?</label>
+                    <p id="errorpromedio" class="error"> </p>
+                    <input id="numeroDatos" type="number" inputmode="numeric" placeholder="Ingresa cantidad de datos">
+                    <button  type="button" onclick="ingreso()">Insertar Datos</button>
+                </div>
+                <div class="div4">
+                    <p id="ingresoDatos"></p>
+                    <form id="aggInputs"">
+                    </form> 
+                </div>
+                <div class="div4">
+                    <p id="resultadoPromedio"></p>
+                    <button id="buttonPromedio" type="button" onclick="calcularPromedio()" style="display: none;" >Calcular Promedio</button>
+                    <button id="buttonMediana" type="button" onclick="calcularMediana()" style="display: none;" >Calcular Mediana</button>
+                    <button id="buttonModa" type="button" onclick="calcularModa()" style="display: none;">Calcular la Moda</button>
+                </div> 
+        </section>
+        <section class="sectionbuton">
+            <h2>Tabla de Salarios</h2>
+            <table id="tabla" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>persona</th>
+                        <th>salario</th>
+                    </tr>
+                </thead>
+            </table>
+            <p id="resultadoTabla"></p>
+            <button id="buttonTabla" type="button" onclick="enviar()" >traer tabla</button>
+            <button id="buttonMedTabla" type="button" onclick="calcularMedianaSalarios(salariosOrdenados)" style="display: none;">Mediana</button>
+            <button id="buttonMed10Tabla" type="button" onclick="calcularMedianaSalarios(salarios10)" style="display: none;">Top 10</button>
+            <button id="buttonOcTabla" type="button" onclick="tablaOculta()" style="display: none;">Ocultar Tabla</button>
+        </section>
+    </main>
+    <footer>
+        <h1>Reto Terminado¡¡¡¡¡¡¡¡</h1>
+    </footer>
+    <script src="./figuras.js"></script>
+    <script src="./Datos.js"></script>
+    <script src="./analisis.js"></script>
+</body>
+</html>
